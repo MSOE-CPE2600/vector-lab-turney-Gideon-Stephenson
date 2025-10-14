@@ -193,7 +193,7 @@ int add(char *token, char name1, char newName, bool stored){
                     vectors[indx] = c;
                 }
             } else {
-                printf("Cannot add more vectors to array size 10\n");
+                printf("Cannot add more vectors to array size 10(-h for Help)\n");
                 return 0;
             }
         } else {
@@ -279,7 +279,7 @@ int multiply(char *token, char name1, char newName, int order, double scale, boo
                             vectors[indx] = c;
                         }
                     } else {
-                        printf("Cannot add more vectors to array size 10\n");
+                        printf("Cannot add more vectors to array size 10(-h for Help)\n");
                         return 0;
                     }
                 } else {
@@ -287,7 +287,7 @@ int multiply(char *token, char name1, char newName, int order, double scale, boo
                     c.x, c.y, c.z);
                 }
             } else {
-                printf("Vector doesn't exist.\n");
+                printf("Vector doesn't exist.(-h for Help)\n");
                 return 0;
             }
         }
@@ -313,7 +313,7 @@ int multiply(char *token, char name1, char newName, int order, double scale, boo
                         vectors[indx] = c;
                     }
                 } else {
-                    printf("Cannot add more vectors to array size 10\n");
+                    printf("Cannot add more vectors to array size 10(-h for Help)\n");
                     return 0;
                 }
             } else {
@@ -321,7 +321,7 @@ int multiply(char *token, char name1, char newName, int order, double scale, boo
                         c.x, c.y, c.z);
             }
         } else {
-            printf("Vector doesn't exist.\n");
+            printf("Vector doesn't exist.(-h for Help)\n");
             return 0;
         }
     }
@@ -391,7 +391,7 @@ int assign(char *token, char name){
             if(token) {
                 double val = strtod(token, &end);
                 if(*end != '\0') {
-                    printf("Invalid numeric value: %s\n", token);
+                    printf("Invalid numeric value: %s (-h for Help)\n", token);
                     return 0;
                 }
                 c.y = val;
@@ -401,7 +401,7 @@ int assign(char *token, char name){
             if(token) {
                 double val = strtod(token, &end);
                 if(*end != '\0') {
-                    printf("Invalid numeric value: %s\n", token);
+                    printf("Invalid numeric value: %s (-h for Help)\n", token);
                     return 0;
                 }
                 c.z = val;
@@ -416,7 +416,7 @@ int assign(char *token, char name){
                     vectors[indx] = c;
                 }
             } else {
-                printf("Cannot add more vectors to array size 10\n");
+                printf("Cannot add more vectors to array size 10 (-h for Help)\n");
             }
         }
     }
