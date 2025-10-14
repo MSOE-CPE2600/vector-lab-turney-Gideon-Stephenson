@@ -154,6 +154,7 @@ void help(){
             "To multiply by a scalar: var1 * num or num * var1\n"
             "Enter 'clear' to clear all stored vectors\n"
             "Enter 'list' to list all stored vectors\n"
+            "Only 10 vectors can be stored at once\n"
             "----------------------------------------------------\n");
 }
 
