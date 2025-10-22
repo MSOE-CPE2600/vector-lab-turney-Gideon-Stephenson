@@ -1,30 +1,30 @@
-#Description
+# Description
 ```
 This program takes in vectors entered by the user and stores them. You can access these vectors and add or subtract them from each other, or multiply them by a scalar.
 You can Load vectors into your storage from a csv file or Save them to a csv file.
 ```
 
-#How to Build
+# How to Build
 ```
-##Manually
+## Manually
 gcc -o vector main.c vector.c
 
-##Makefile
+## Makefile
 Enter: make
 
 (Note: the makefile includes -g for running with valgrind, add -g manually to use valgrind)
 ```
 
-#How to Run
+# How to Run
 ```
-##Normally
+## Normally
 ./vector
 
-##Valgrind
+## Valgrind
 valgrind --leak-check=full ./vector
 ```
 
-#Supported Commands
+# Supported Commands
 ```
 - quit
 - clear
@@ -39,7 +39,7 @@ valgrind --leak-check=full ./vector
 (Note: Val should be replaced with numeric values, and var should be replaced with a **ONE** character variable name)
 ```
 
-#Dynamic Memory Description
+# Dynamic Memory Description
 ```
 This program uses dynamic memory by starting with 10 vector spots allocated, and allocating 10 more every time more spots are required.
 When clearing it resets to 10 slots.
