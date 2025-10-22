@@ -29,10 +29,8 @@ valgrind --leak-check=full ./vector
 - var1 + var2
 - var1 - var2
 - var1 * num or num * var1
-(Note: Val should be replaced with numeric values, and var should be replaced with a **ONE** character variable name)
+- (Note: Val should be replaced with numeric values, and var should be replaced with a **ONE** character variable name)
 
 # Dynamic Memory Description
-```
 This program uses dynamic memory by starting with 10 vector spots allocated, and allocating 10 more every time more spots are required.
 When clearing it resets to 10 slots.
-```
