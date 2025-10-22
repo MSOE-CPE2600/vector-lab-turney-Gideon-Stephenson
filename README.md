@@ -3,19 +3,19 @@ This program takes in vectors entered by the user and stores them. You can acces
 You can Load vectors into your storage from a csv file or Save them to a csv file.
 
 # How to Build
-## Manually
+### Manually
 gcc -o vector main.c vector.c
 
-## Makefile
+### Makefile
 Enter: make
 
 (Note: the makefile includes -g for running with valgrind, add -g manually to use valgrind)
 
 # How to Run
-## Normally
+### Normally
 ./vector
 
-## Valgrind
+### Valgrind
 valgrind --leak-check=full ./vector
 
 # Supported Commands
