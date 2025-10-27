@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-c -Wall
+CFLAGS=-c -Wall -g
 SOURCES= main.c vector.c
 OBJECTS=$(SOURCES:.c=.o)
 EXECUTABLE=vector

@@ -23,3 +23,6 @@ int subtract(char *token, char name1, char newName, bool stored);
 int multiply(char *token, char name1, char newName, int order, double scale, bool stored);
 void list();
 int assign(char *token, char name);
+void reallocate();
+void save(char *fileName);
+void load(char *fileName);
